@@ -47,7 +47,6 @@ export const searchByLetter = (string, search) => {
 export const showUsers = (user, search) => {
     if (search === "") {
         return user
-        // } else if (user.name.first.toLowerCase().includes(search.toLowerCase()) || user.name.last.toLowerCase().includes(search.toLowerCase())) {
     } else if (searchByLetter(user.name.first, search)) {
         return true
     } else if (searchByLetter(user.name.last, search)) {
