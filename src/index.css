@@ -1,3 +1,6 @@
+* {
+  box-sizing : border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +10,192 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navBar {
+  background-color: #fc8093;
 }
+
+.female {
+  background-color: #ffebee;
+}
+
+
+.young {
+  background-color: green;
+}
+
+.grid {
+  width: 350px;
+  height: 450px;
+}
+
+.grid-pic-container {
+  position: relative;
+  text-align: center;
+}
+
+.grid-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+.grid-fullname {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.noSearch {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+
+
+}
+
+.decor {
+  text-decoration: none;
+
+}
+.smile {
+  transform: scale(3.5);
+}
+
+
+form,input {
+  width: 100%;
+border: none;
+padding: 5px;
+outline: none;
+  
+}
+input {
+  border-bottom: 1px solid grey;
+  
+}
+
+.user-img {
+  cursor: pointer;
+}
+
+.modal-background {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1040;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(15px);
+}
+
+.modal-wrapper {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 80%;
+  text-align: center;
+  background-color: white;
+  
+}
+
+.close-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+}
+  .info-page {
+
+    padding-top: 70px;
+  }
+
+.sk-cube-grid {
+  width: 200px;
+  height: 150px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fc8093;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
+
+
+@media only screen and (max-width:950px) {
+  .modal-wrapper {
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+  }
+}
+
