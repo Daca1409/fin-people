@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import { About } from "./components/About";
+import { fetchData } from './components/UsersService'
 
 
 
@@ -18,6 +19,7 @@ function App() {
   useEffect(() => {
     if (localStorage.getItem("loadedUsers"))
       setUsers(JSON.parse(localStorage.getItem("loadedUsers")));
+    fetchData(setUsers)
   }, []);
 
   useEffect(() => {
