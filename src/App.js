@@ -7,9 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import { About } from "./components/About";
-// import { fetchData } from "./components/UsersService";
-// da li treba da pozivam  fetchData u useEffectu za grid?
-//mislim da ne zato sto ne zelim da kada se renderuje stranica prvi put da mi se pojave novi useri. zelim da vidim one stare sacuvane od malore.
+
 
 
 function App() {
@@ -24,7 +22,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("loadedUsers", JSON.stringify(users));
-    // setTimeout(() => { setLoading(true) }, 1.0 * 1000);
     setLoading(false)
   }, [users]);
 
