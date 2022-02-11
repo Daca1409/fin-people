@@ -65,11 +65,8 @@ export const fetchData = (setUsers) => {
         file.text().then(txt => {
             var obj = JSON.parse(txt)
             setUsers(obj.results);
-            console.log(obj.results)
         })
     })
-
-
 }
 
 

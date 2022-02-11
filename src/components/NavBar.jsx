@@ -5,9 +5,6 @@ import ViewListIcon from '@mui/icons-material/ViewList';
 import { Link } from "react-router-dom";
 import { fetchData } from './UsersService';
 
-
-
-
 export const NavBar = (props) => {
 
     const changeGrid = () => {
